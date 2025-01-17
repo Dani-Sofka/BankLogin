@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.input-group input {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 98%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%; /* El formulario ocupará el 90% del ancho de la pantalla */
+        padding: 1.5rem; /* Reducir un poco el relleno */
+    }
+
+    h2 {
+        font-size: 1.3rem; /* Reducir el tamaño de la fuente */
+    }
+
+    .input-group input {
+        padding: 0.7rem;
+        font-size: 1rem; /* Tamaño ajustado */
+    }
+
+    button {
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+}
